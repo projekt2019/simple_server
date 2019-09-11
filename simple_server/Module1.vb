@@ -20,7 +20,7 @@ Module Module1
                 dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("$"))
                 msg("Daten vom Client -  " + dataFromClient)
 
-                Dim serverResponse As String = "Server response " + Convert.ToString(requestCount)
+                Dim serverResponse As String = "Server antwortet " + Convert.ToString(requestCount)
                 Dim sendBytes As Byte() = Encoding.ASCII.GetBytes(serverResponse)
 
                 networkStream.Write(sendBytes, 0, sendBytes.Length)
