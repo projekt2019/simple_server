@@ -6,7 +6,7 @@ Public Class Form1
     Dim serverStream As NetworkStream
 
 
-    ' Verbinden Event
+    ' Verbinden Event2
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         connect("127.0.0.1", 8888)
     End Sub
