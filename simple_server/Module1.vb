@@ -23,8 +23,8 @@ Module Module1
                 Dim serverResponse As String = "Server antwortet " + Convert.ToString(requestCount)
                 Dim sendBytes As Byte() = Encoding.ASCII.GetBytes(serverResponse)
 
-                networkStream.Write(sendBytes, 0, sendBytes.Length)
-                networkStream.Flush()
+                'networkStream.Write(sendBytes, 0, sendBytes.Length)
+                'networkStream.Flush()
                 msg(serverResponse)
             Catch ex As Exception
                 MsgBox(ex.ToString)

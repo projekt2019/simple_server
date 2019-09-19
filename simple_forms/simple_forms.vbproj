@@ -120,5 +120,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\klassen\klassen.vbproj">
+      <Project>{9923FBED-3A25-492C-AEA6-8EB0D20D56EA}</Project>
+      <Name>klassen</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
